@@ -1,0 +1,42 @@
+@import url("https://api.fontshare.com/v2/css?f[]=general-sans@1,2&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    /* Sätter basfärg och typsnitt på text på body */
+    @apply antialiased text-neutral-800 font-medium font-sans;
+  }
+
+  /* Klass för max-bredd på sida.*/
+  .content-container {
+    @apply max-w-screen-xl mx-auto px-5 md:px-10;
+  }
+
+  /* Hjälpklasser för rubriker */
+  .heading-lg {
+    @apply text-3xl md:text-5xl md:leading-tight font-semibold text-center mb-4 md:mb-6;
+  }
+
+  .heading-md {
+    @apply text-3xl md:text-4xl leading-tight font-semibold mb-4;
+  }
+
+  .heading-sm {
+    @apply text-2xl leading-tight font-semibold;
+  }
+
+  .spacing-lg {
+    @apply mb-20 md:mb-36;
+  }
+
+  .spacing-md {
+    @apply mb-12 md:mb-20;
+  }
+
+  .spacing-sm {
+    @apply mb-7 md:mb-10;
+  }
+}
