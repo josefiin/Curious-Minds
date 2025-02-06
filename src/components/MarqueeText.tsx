@@ -3,7 +3,7 @@ import Marquee from "react-fast-marquee";
 
 const MarqueeText = () => {
   return (
-    <div className="bg-beige-light rounded-full py-4 px-8 spacing-xl">
+    <div className="bg-beige-light rounded-full py-4 px-8 spacing-lg">
       <Marquee
         autoFill
         gradient
