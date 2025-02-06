@@ -2,24 +2,21 @@ import { Link } from "react-router-dom";
 
 const Navigation = () => {
   return (
-    <header className="bg-plum-light">
-      <div className="content-container h-[120px] md:h-[156px] flex pt-4 md:pt-6 relative">
-        <Link
-          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
-          to="/"
-        >
+    <header className="bg-plum-light pt-4 md:pt-10 spacing-lg">
+      <div className="content-container flex justify-between items-center">
+        <Link to="/">
           <img
-            className="w-28 md:w-36"
-            src="/curious-minds_logotype.svg"
-            alt="CuriousMinds logotyp. Three smiling, colorful, geometric figuers, wordmark underneath."
+            className="w-40 md:w-48"
+            src="/curious-minds_logotype_horizontal.svg"
+            alt="CuriousMinds logotyp. Purple, smiling, hexagon figure, wordmark to the right."
           />
         </Link>
-        <nav className="ml-auto">
-          <ul className="flex space-x-4 text-plum-dark">
-            <li>
+        <nav className="bg-plum-mid rounded-full">
+          <ul className="flex gap-4 md:gap-6 px-6 py-3 text-plum-dark">
+            <li className="hover:underline underline-offset-4">
               <Link to="/">Home</Link>
             </li>
-            <li>
+            <li className="hover:underline underline-offset-4">
               <Link to="/about">About</Link>
             </li>
           </ul>

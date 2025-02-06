@@ -31,7 +31,7 @@ const ScrollTop = () => {
     <div>
       {isVisible && (
         <button
-          className="fixed bottom-5 right-5 text-sm  bg-plum-light p-1 rounded-full transition-opacity duration-300"
+          className="fixed bottom-5 right-5 text-sm  bg-plum-mid drop-shadow-sm p-1 rounded-full transition-opacity duration-300"
           onClick={scrollToTop}
         >
           <img

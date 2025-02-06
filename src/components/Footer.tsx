@@ -9,15 +9,23 @@ const Footer = () => {
         />
       </div>
       {/* En div runt en div för bg-färg */}
-      <div className="bg-beige">
+      <div className="bg-lion-mid">
         <div className="content-container flex flex-col md:flex-row justify-center items-center md:justify-between py-8 md:py-10">
           <img
             src="/curious-minds_wordmark.svg"
             alt="CuriousMinds wordmark."
             className="mb-4 md:mb-0"
           />
-          <p className="mb-5 md:mb-0 text-xs">
-            Copyright © 2025 Curious Minds Society. All rights reserved
+          <p className="mb-5 md:mb-0 text-xs text-center">
+            Designed and developed by{" "}
+            <a
+              href="https://www.josefinholgersson.com/"
+              target="_blank"
+              className="underline"
+            >
+              Josefin Holgersson
+            </a>{" "}
+            | Javascript framework assignment | Högskolan Väst 2025
           </p>
           <section className="flex gap-4">
             <span>

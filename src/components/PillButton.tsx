@@ -9,7 +9,7 @@ const PillButton = (props: PillButtonProps) => {
   return (
     <Link
       to={props.link}
-      className="bg-jelly-light hover:bg-jelly-mid py-1 px-5 md:py-2 md:px-8 rounded-full"
+      className="bg-beige-light hover:bg-plum-mid transition-colors duration-300 ease-in-out py-1 px-5 md:py-2 md:px-8 rounded-full"
     >
       {props.text}
     </Link>

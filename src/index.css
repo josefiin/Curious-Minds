@@ -7,7 +7,7 @@
 @layer base {
   body {
     /* Sätter basfärg och typsnitt på text på body */
-    @apply antialiased text-neutral-800 font-medium font-sans;
+    @apply antialiased text-neutral-800 font-medium font-sans bg-plum-light;
   }
 
   /* Klass för max-bredd på sida.*/
@@ -27,15 +27,19 @@
   .heading-sm {
     @apply text-2xl leading-tight font-semibold;
   }
-
-  .spacing-lg {
-    @apply mb-20 md:mb-36;
+  /* 96px 160px */
+  .spacing-xl {
+    @apply mb-24 md:mb-40;
   }
-
+  /* 80px 128px */
+  .spacing-lg {
+    @apply mb-20 md:mb-32;
+  }
+  /* 48px 80px */
   .spacing-md {
     @apply mb-12 md:mb-20;
   }
-
+  /* 28px 40px */
   .spacing-sm {
     @apply mb-7 md:mb-10;
   }

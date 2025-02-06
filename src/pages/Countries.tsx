@@ -48,10 +48,9 @@ const Countries = () => {
           </div>
         </section>
         <section className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-10">
-          {/* Mappar alla länder och skriver ut. React vill ha en "key", posterna saknar id i API så använder index då listan inte kan ändras. */}
           {regionData.map((country, index) => (
             <CountryCard
-              key={index}
+              key={`${index}-${country.region}-${country.subregion}`} // Unikt key som ändras vid regionsbyte
               name={country.name.common}
               officialName={country.name.official}
               region={country.region}

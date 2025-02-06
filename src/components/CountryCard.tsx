@@ -1,5 +1,7 @@
+import { motion } from "motion/react";
+
 type CountryCardProps = {
-  key: number;
+  // key: string;
   name: string;
   officialName: string;
   region: string;
@@ -14,11 +16,19 @@ type CountryCardProps = {
 
 const CountryCard = (props: CountryCardProps) => {
   return (
-    <div className="bg-beige rounded-image-lg p-5 md:p-8">
+    <motion.div
+      className="bg-beige-light drop-shadow-sm rounded-image-lg p-5 md:p-8"
+      initial={{ opacity: 0, scale: 0.9 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{
+        duration: 0.4,
+        scale: { type: "spring", visualDuration: 0.5, bounce: 0.2 },
+      }}
+    >
       <img
         src={props.imgUrl}
         alt={props.imgAlt}
-        className="rounded-image-md w-full mb-6"
+        className="rounded-2xl w-full mb-6"
       />
       <h2 className="heading-sm mb-2">{props.name}</h2>
       <table className="text-left w-full border-separate border-spacing-y-1">
@@ -53,7 +63,7 @@ const CountryCard = (props: CountryCardProps) => {
           </tr>
         </tbody>
       </table>
-    </div>
+    </motion.div>
   );
 };
 
